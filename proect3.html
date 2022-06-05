@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+             width: 100%;
+             margin: 0px;
+        }
+        p{
+            font-size: 20px;
+            text-align:center;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid gray;
+            border-radius: 50%;
+        }
+        #skyblue{
+            background-color: #87ceeb;
+        }
+        #yellow{
+            background-color: #ffff00;
+        }
+        #violet{
+            background-color: #ee82ee;
+        }
+        #green{
+            background-color: #adff2f;
+        }
+        #color-changer{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-changer">
+     <span class="btn" id="skyblue" onclick="changeBG('#87ceeb')"></span>
+     <span class="btn" id="yellow"  onclick="changeBG('#ffff00')"></span>
+     <span class="btn" id="violet"  onclick="changeBG('#ee82ee')"></span>
+     <span class="btn" id="green"  onclick="changeBG('#adff2f')"></span>
+    </div>
+    <h1>Background color changer</h1>
+    <img src="/IT-Companies-In-India-800x391.png" alt="">
+    <p>Indian IT-BPM industry holds 45% of share in Indian Export Services.
+        A fastest growing sector in India with a rate of 2.3%.
+        More than 8% share in the Indian GDP.
+        IT Industry revenue around $170-$200 billion in Indian Market.
+        If these stats are not enough, then do not know what is?
+        The IT sector of India is a competitive global industry soaring high worldwide.
+        You must be wondering what these companies are like, and what their work culture is like?
+        India’s IT Service Industry is one of the flourishing industries providing its clients with the finest informational technology services.
+
+IT companies are now a significant part of big businesses as the world is all about everything digital nowadays. From insurance slips to medical reports; from payroll to customer services; from call centers to legal systems to education, every industry is thriving in the market through technology and software.
+
+IT companies of India provide their clients with the expertise in maintaining and monitoring the technical department. Services could range from hardware services to cloud computing, cybersecurity to network infrastructure. The function of an Indian IT company is not limited to a single definition. It is diversified and comprehensive.
+IT Functions can be categorized into three departments –
+
+Infrastructure: This function is inclusive of all the components of hardware, software, and network resources that are significant for the existence and operation of an IT firm. Some services are Networking, platform management, security, storage architecture, etc.
+
+Governance: IT Governance is the function that uses IT systems and new methodologies to incorporate efficient evaluation of a business or any other individual client. As a part of the IT governance team, they focus on delivery, risk management, resource management, strategic alignment, and performance management.
+Some IT governance companies are COBIT (Control Objectives for Information and Related Technologies), ITIL (Information Technology Infrastructure Library).
+
+Functionality: SaaS (Software as service) or FaaS (Function as service) is a department of IT services that provides a platform for companies to run, develop, and manage functionalities of applications. Some of the examples are cloud computing, database management, etc.
+    </p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.background = color;
+        }
+    </script>
+</body>
+</html>
