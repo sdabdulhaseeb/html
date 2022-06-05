@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .custom-footer {
+            bottom: 0;
+            display: inline-block;
+            /* height: 35px; */
+            height: auto ! important
+            padding: 0;
+            position: relative;
+            text-align: center;
+            z-index: 1000;
+            width: 100%;
+        }
+
+@media screen and (max-width: 800px) {
+  #setuApp {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+
+
+/*.footer a {
+            color: #0300b9;
+            font-weight:600;
+        }*/
+.whats-app {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 3px 4px 3px #999;
+           /* left: 15px;*/
+right:20px;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 10px;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Agent Portal</title>
+    <link href="/Content/css?v=oww8keaYn0L1rCuBb3UH3suQ4lAHzi1Luk_gj5UZqGc1" rel="stylesheet"/>
+
+    <script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <!-- Login CSS -->
+    <link href="/Design/css/login.css?v=47" rel="stylesheet" />
+    <link href="/Content/Custom.css?v=1" rel="stylesheet" type="text/css" media="all" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Design/css/appband.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body role="document" id="bgimagesd">
+    <div id="result" style="display: none;">
+        <div class="resultMessage rb-a-4">
+            <span id="resultMessage" class="_statusMsgContent"></span>
+            <button type="button" class="close" aria-label="Close" id="closeAlert"><span aria-hidden="true">&times;</span></button>
+        </div>
+    </div>
+    <header role="banner" class="bgheader">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7 logo">
+                        <a href="/Home/HomePage"><img src="/Design/JCimages/logo.png" class="img-responsive" /></a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 pull-right contactInfo">
+                        <img src="/Design/JCimages/Contact.png" class="img-responsive" style="height:80px;" />
+                    </div>
+ 
+                </div>
+            </div>
+        </div>
+
+    </header><!--/header -->
+    <div class="clearfix"></div>
+    <div class="whitespace hidden-lg hidden-md">
+    </div>
+
+    <section>
+<div id="bgimage">
+        <div class="container" role="main">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <form id="_CRSFform" action="#" method="post"><input name="__RequestVerificationToken" type="hidden" value="LKAz7KBPIFcnn3UAw1DAZ_ewWq-hDFwGBu3_LvrYLGW3cIvctUVhP-caLsrxeThfQil0MaLHNK8MqV_2m_6QvsBg57ts2R8RJo0ICJpOJUU1" /></form>
+                <div>
+                    
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<style>
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    #CaptchaInputText {
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        color: #555;
+        display: block;
+        font-size: 14px;
+        height: 34px;
+        line-height: 1.42857;
+        padding: 6px 12px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        width: 100%;
+    }
+    #CaptchaImage {
+       width: 60%;
+	height: 60px;
+	margin-top: 6px;
+	margin-bottom: 10px;
+    }
+
+    #captchadiv {
+        padding-top: -130px;
+    }
+
+    .captchaimgdiv {
+        margin-top: -155px;
+        margin-left: 10px;
+    }
+
+    #captchadiv br {
+        display: none;
+    }
+@media (min-width: 1200px){
+.col-lg-3 {
+    width: 27% !important;
+}}
+</style>
+<div class="clearfix"></div>
+<div class="col-lg-3 col-md-4 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-0 col-lg-offset-0 loginform bgmargintop" style="margin-bottom: 40px;margin-top: 25px;right:100px;">
+<form action="/Account/Login" autocomplete="off" id="loginForm" method="post"><input type="password" style="display:none;"/>
+    <div class="col-xs-10 col-xs-push-1 hidden-sm hidden-xs">
+        
+ <a href="https://www.facebook.com/JaldiCash/" target="_blank"><img src="/Design/JCimages/jcFBbutton.png" class="center-block img-responsive" style="margin-top: 6px;height: 47px;" /></a>
+    </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12 smallcenter">
+            <div id="token">
+                <input name="__RequestVerificationToken" type="hidden" value="tItj2StuRHhBiHYmzasgwRZ8UuNVZbwyTQQZKZQmGVATya6Wbs5mByycyM0DWFv6kzhTjhzyxbNtiUAlec1t-K93ESEeC0ELYA1-dbGy9OA1" />
+            </div>
+            
+            <div class="row">
+                
+                <div class="form-group">
+                    <label for="Email" class="lblLogin">Login Id</label>
+                    <input class="form-control upperCase text-box single-line" data-val="true" data-val-required="This field is required" id="LoginId" maxlength="20" name="LoginId" type="text" value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="LoginId" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="form-group" style="line-height: 17px;">
+                    <label for="pwd" class="lblLogin">Password</label>
+                    <input autocomplete="new-password" class="form-control text-box single-line password" data-val="true" data-val-required="This field is required" id="Password" name="Password" type="password" value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+<span style="font-size: 12px;color: red;font-weight: 500;display:none;">**NOTE: Dear Agent Partners, "Remember Password" and "Autofill for password" feature is being disabled due to security reasons. You can use the forgot password link to reset your password. Please memorise your password. Do not share the Password. Thank you for your cooperation.</span>
+                </div>
+                <br />
+                <div class="form-group" id="captchadiv" style="margin-top:-30px;float:left">
+
+                    
+<script type="text/javascript">
+$(function () {$('#f50720cdab144bc59cf06a878add907e').show();});
+function ______96684b4dc17548828060b034da6165f6________() { $('#f50720cdab144bc59cf06a878add907e').hide(); $.post("/DefaultCaptcha/Refresh", { t: $('#CaptchaDeText').val() }, function(){$('#f50720cdab144bc59cf06a878add907e').show();}); return false; }</script> 
+<br/>
+<img id="CaptchaImage" src="/DefaultCaptcha/Generate?t=1c438e8d15534722af3146e640f18db7"/><input id="CaptchaDeText" name="CaptchaDeText" type="hidden" value="1c438e8d15534722af3146e640f18db7" /> <br/><a href="#CaptchaImage" id="f50720cdab144bc59cf06a878add907e" onclick="______96684b4dc17548828060b034da6165f6________()" style="display:none;">Refresh captcha</a><br/><br/><input autocomplete="off" autocorrect="off" data-val="true" data-val-required="This field is required" id="CaptchaInputText" name="CaptchaInputText" type="text" value="" /><br/>
+                    <span class="field-validation-valid text-danger" data-valmsg-for="CaptchaInputText" data-valmsg-replace="true"></span>
+                </div>
+                
+                <div style="clear:both"></div>
+                
+
+                <div class="btn-login">
+                    <input type="button" value="Login" class="btn btn-JC userLogin" />
+                    <a class="pull-right" href="/Account/ForgotPassword?Length=7">Forgot Password?</a>
+                   
+                </div>
+                <div style="float:right;">
+                    <a href="/Account/SignUp">Sign Up New Agent</a>
+                </div>
+<img src="/Design/JCimages/W-impex.png" style="width:50%;" class="img-responsive">
+            </div>
+        </div>
+        <div class="clearfix"></div>
+</form></div><!-- /loginform -->
+
+
+
+
+
+
+
+                </div>
+                    <div style="display:none;">
+                        <div class="col-lg-9 col-md-8 hidden-xs margintop50">
+                            <div class="hidden-xs">
+                                <div class="col-lg-4 col-md-4 col-sm-4 backgroundimagecontentHideicon">
+                                    <img src="/Design/JCimages/instant.png" class="img-responsive" />
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 backgroundimagecontentHideicon">
+                                    <img src="/Design/JCimages/simple.png" class="img-responsive" />
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 backgroundimagecontentHideicon">
+                                    <img src="/Design/JCimages/secure.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div><!-- /icons -->
+                        <div class="clearfix hidden-lg hidden-md visible-sm visible-xs backgroundimagecontentHide"></div>
+                        <div class="col-lg-9 col-md-8 margintop50 backgroundimagecontentHide">
+                            <div>
+                                
+                                <div class="hidden-sm hidden-xs">
+            <div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-0 col-md-offset-0"><img src="/Design/JCimages/instantmoneytransfer@4x-8.png" class="img-responsive" /></div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1"><img src="/Design/JCimages/IME@4x-8.png" class="img-responsive" /></div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1"><img src="/Design/JCimages/AEPS@4x-8.png" class="img-responsive" /></div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="margintop20">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-0 col-md-offset-0"><img src="/Design/JCimages/BillPayment@4x-8.png" class="img-responsive" /></div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1"><img src="/Design/JCimages/Recharge@4x-8.png" class="img-responsive" /></div>                
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1"><img src="/Design/JCimages/CapitalLoan@4x-8.png" class="img-responsive" /></div>                
+                <div class="clearfix"></div>
+            </div>
+            <div class="margintop20">                 
+                 <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-0 col-md-offset-0"><img src="/Design/JCimages/Travel@4x-8.png" class="img-responsive" /></div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1"><img src="/Design/JCimages/BikeInsurance@4x-8.png" class="img-responsive" /></div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1"><img src="/Design/JCimages/Gold@4x-8.png" class="img-responsive" /></div>
+                  <div class="clearfix"></div>
+              </div>
+        </div>
+                                <div class="clearfix"></div>
+                                
+                                <div class="visible-sm visible-xs">
+                                    <div>
+                                        <div class="col-xs-4 "><img class="img-responsive " src="/Design/JCimages/mmt.png" /></div>
+                                        <div class="col-xs-4 "><img class="img-responsive" src="/Design/JCimages/mime.png" /></div>
+                                        <div class="col-xs-4 "><img class="img-responsive" src="/Design/JCimages/mbbps.png" /></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-4 "><img class="img-responsive " src="/Design/JCimages/maeps.png" /></div>
+                                        <div class="col-xs-4 "><img class="img-responsive " src="/Design/JCimages/mrecharge.png" /></div>
+                                        <div class="col-xs-4 "><img class="img-responsive " src="/Design/JCimages/mloans.png" /></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-4 "><img class="img-responsive " src="/Design/JCimages/mtravel.png" /></div>
+                                        <div class="col-xs-4 "><img class="img-responsive " src="/Design/JCimages/mgold.png" /></div>
+                                        <div class="col-xs-4 "><img class="img-responsive " src="/Design/JCimages/minsurance.png" /></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="clearfix"></div>
+
+            </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:none;">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img src="/Design/JCimages/W-impex.png" class="img-responsive"></div>
+                    </div>
+        </div> <!-- /container -->
+</div>
+    </section><!--/section -->
+
+    <footer class="footer custom-footer" style="position:relative;">
+        <div class="footer-content" style="position:relative;">
+            <div class="col-md-12">
+                <div>
+                    <a class="showSingle" target="1" style="font-weight: bold; font-size: 14px"><u>English</u></a><span class="dimond-seperator">&#9830;</span>
+                    <a class="showSingle" target="2"><u>Hindi</u></a><span class="dimond-seperator">&#9830;</span>
+                    <a class="showSingle" target="3"><u>Malayalam</u></a><span class="dimond-seperator">&#9830;</span>
+                    <a class="showSingle" target="4"><u>Telugu</u></a><span class="dimond-seperator">&#9830;</span>
+                </div>
+                <div class="clearfix"></div>
+                <div id="div1" class="targetDiv" style="font-size:13px;">
+                    <a href="https://www.jaldicash.com/T&C/Terms&Conditions.pdf" target="_blank">Terms & Conditions</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/TermsOfUse.pdf" target="_blank">Terms of Use</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/FAQs.pdf" target="_blank">FAQ on JaldiCash Wallet</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/PrivatePolicy.pdf" target="_blank">Privacy Policy</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/CustomerGrievanceRedressal.htm" target="_blank">Customer Grievance Redressal Policy</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/StandardOperatingProcedure.pdf" target="_blank">Operations Manual</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/CustomerProtectionPolicy.pdf" target="_blank">Customer Protection Policy</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.weizmannimpex.com/Home/contact" target="_blank">Contact Us</a>
+
+		<span class="dimond-seperator">&#9830;</span>
+		<a href="https://www.jaldicash.com/Complaint/ComplaintManagement" target="_blank">Report Fraud (PPI)</a>
+                </div>
+<div>
+ 		 <a class="whats-app" href="https://web.whatsapp.com/send?phone=919930040040&text&app_absent=0" target="_blank">
+     		  <i class="fa fa-whatsapp my-float"></i>
+  		 </a>
+		 </div>
+                <div class="clearfix"></div>
+                <div id="div2" class="targetDiv">
+                    <a href="https://www.jaldicash.com/T&C/Hindi/TermsANDCondition_Hindi.pdf" target="_blank"> नियम और शर्तें</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Hindi/TermsOfUse _Hindi .pdf" target="_blank">उपयोग की शर्तें</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Hindi/FAQs _Hindi .pdf" target="_blank">सामान्य प्रश्न</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Hindi/PrivacyPolicy _Hindi .pdf" target="_blank">गोपनीयता नीति</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Hindi/CustomerGrievanceRedressal_Hindi.htm" target="_blank">ग्राहक शिकायत निवारण नीति</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Hindi/SOP-Hindi.pdf" target="_blank">आपरेशन मैनुअल</a><span class="dimond-seperator">&#9830;</span>
+		<a href="https://www.jaldicash.com/Complaint/ComplaintManagement" target="_blank">Report Fraud (PPI)</a>
+                </div>
+                <div class="clearfix"></div>
+                <div id="div3" class="targetDiv">
+                    <a href="https://www.jaldicash.com/T&C/Malayalam/Terms & Condition - Malayalam.pdf" target="_blank">വ്യവസ്ഥകളും ഉപാധികളും</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Malayalam/TermsOfUse.pdf" target="_blank">ഉപയോഗ നിബന്ധനകൾ</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Malayalam/FAQs.pdf" target="_blank">പൊതുവായ ചോദ്യം</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Malayalam/PrivatePolicy.pdf" target="_blank">സ്വകാര്യതാനയം</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Malayalam/CustomerGrievanceRedressal.htm" target="_blank">ഉപഭോക്തൃ പരാതി പരിഹാര നയം</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Malayalam/StandardOperatingProcedure.pdf" target="_blank">ഓപ്പറേഷൻ മാനുവൽ</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Malayalam/CustomerProtectionPolicy.pdf" target="_blank">ഉപഭോക്തൃ സംരക്ഷണ നയം</a><span class="dimond-seperator">&#9830;</span>
+		<a href="https://www.jaldicash.com/Complaint/ComplaintManagement" target="_blank">Report Fraud (PPI)</a>
+                </div>
+                <div class="clearfix"></div>
+                <div id="div4" class="targetDiv">
+                    <a href="https://www.jaldicash.com/T&C/Telugu/Terms&Conditions.pdf" target="_blank">నిబంధనలు మరియు షరతులు</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Telugu/TermsOfUse.pdf" target="_blank">వాడుక నియమాలు</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Telugu/FAQs.pdf" target="_blank">సాధారణ ప్రశ్న</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Telugu/PrivatePolicy.pdf" target="_blank">గోప్యతా విధానం</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Telugu/CustomerGrievanceRedressal.htm" target="_blank">కస్టమర్ ఫిర్యాదు పరిష్కార విధానం</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Telugu/StandardOperatingProcedure.pdf" target="_blank">ఆపరేషన్ మాన్యువల్</a><span class="dimond-seperator">&#9830;</span>
+                    <a href="https://www.jaldicash.com/T&C/Telugu/CustomerProtectionPolicy.pdf" target="_blank">కస్టమర్ ప్రొటెక్షన్ పాలసీ</a>
+<span class="dimond-seperator">&#9830;</span>
+		<a href="https://www.jaldicash.com/Complaint/ComplaintManagement" target="_blank">Report Fraud (PPI)</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <a href="https://www.weizmannimpex.com" class="copy-right" target="_blank">&copy; 2019 - WEIZMANN IMPEX SERVICE ENTERPRISE LIMITED. ALL RIGHTS RESERVED.</a>
+            </div>
+        </div>
+    </footer>
+
+    
+    
+
+
+    <section id="appband" class="hidden-sm hidden-xs">
+        <nav id="appbandnav" class="animate">
+            <ul>
+                
+                <li>
+                    <img width="24" src="/Design/JCimages/app-band-logo/Weizmaan-Impex.png" /><a href="https://www.weizmannimpex.com/" target="_blank"> Weizmann Impex</a>
+                </li>
+                <hr />
+                
+                <li>
+                    <img width="24" src="/Design/JCimages/app-band-logo/JC.png" /><a href="https://www.jaldicash.com/" target="_blank"> JaldiCash (Retailer)</a>
+                </li>
+                <hr />
+                <li>
+                    <img width="24" src="/Design/JCimages/app-band-logo/JC.png" /><a href="https://admin.jaldicash.com/" target="_blank"> JaldiCash (Distributor)</a>
+                </li>
+                <hr />
+                
+                <li>
+                    <img width="24" src="/Design/JCimages/app-band-logo/tsi_yatra.png" />Rail Ticketing
+                </li>
+                <hr />
+                
+                
+            </ul>
+            <div class="divider"></div>
+        </nav>
+        <div class="nav-controller">
+            <span class="fa fa-bars controller-open"></span>
+            <span class="fa fa-times controller-close"></span>
+        </div>
+    </section>
+
+
+
+
+    <!--/footer -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="/Scripts/jquery.validate.min.js"></script>
+    <script src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+
+    <script src="/bundles/bootstrap?v=a0JlrK3HWJYO4CANWtnjZQ6r-FHTgFewh3ItuNGmfr41"></script>
+
+
+    <script src="/Scripts/Global.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="/Design/js/jquery.easydropdown.js"></script>
+    <div class="reveal-modal-bg  ui-widget-overlay" style="display: none;">
+        <img src="/Images/loading.gif" />
+    </div>
+
+    <form action="https://weizmannimpex.com/" method="POST" target="_blank" id="frmWU">
+        <input type="hidden" id="WUQueryString" name="WUQueryString" value="" />
+    </form>
+    
+ 
+<script src="/Scripts/jquery.cookie.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/Scripts/aes.js"></script>
+    <script src="/Scripts/CustomeJS/Account/CapLogin.js?v=7"></script>
+
+    <script>
+        var key = '3596hlev';
+        var aesKey = '7171717171717171';
+    </script>
+    
+<script type="text/javascript">
+$(function () {$('#f50720cdab144bc59cf06a878add907e').show();});
+function ______96684b4dc17548828060b034da6165f6________() { $('#f50720cdab144bc59cf06a878add907e').hide(); $.post("/DefaultCaptcha/Refresh", { t: $('#CaptchaDeText').val() }, function(){$('#f50720cdab144bc59cf06a878add907e').show();}); return false; }</script>
+    
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var jdata = "[  {    &quot;Date&quot;: &quot;11-Feb-2022&quot;,    &quot;Image&quot;: &quot;IRCTC.jpg&quot;  },  {    &quot;Date&quot;: &quot;13-Feb-2022&quot;,    &quot;Image&quot;: &quot;IRCTC.jpg&quot;  }]";
+        var fields_list = JSON.parse(jdata.replace(/&quot;/g, '"'));
+        var bg = fields_list;
+
+        const date = new Date();
+        const formattedDate = date.toLocaleDateString('en-GB', {
+            day: 'numeric', month: 'short', year: 'numeric'
+        }).replace(/ /g, '-');
+        //console.log(formattedDate);/
+
+        $.each(bg, function (i, v) {
+            if (v.Date == formattedDate) {
+                $('#bgimage').css('background-image', 'url("../../Images/BackgroundImage/' + v.Image + '")');
+                return false;
+            }
+            // console.log(v);
+        });
+    });
+</script>
+
+
+
+    <script type="text/javascript">
+        $(document).ajaxStart(function () {
+            //$('.reveal-modal-bg').show();
+        }).ajaxStop(function () {
+            $('.reveal-modal-bg').hide();
+        }).ajaxComplete(function (xhr, status) {
+            $('.reveal-modal-bg').hide();
+            if (status.responseJSON != null && status.responseJSON.Code != undefined) {
+                checkSessionDetail(status.responseJSON);
+            }
+        }).ajaxSuccess(function (xhr, status) {
+            $('.reveal-modal-bg').hide();
+            if (status.responseJSON != null && status.responseJSON.Code != undefined) {
+                checkSessionDetail(status.responseJSON);
+            }
+        }).ajaxError(function (xhr, status) {
+            $('.reveal-modal-bg').hide();
+            if (status.responseJSON != null && status.responseJSON.Code != undefined) {
+                checkSessionDetail(status.responseJSON);
+            }
+        });
+function DownloadPosterLetter(arg) {
+            $.ajax({
+                type: "post",
+                url: "/Account/DownloadPosterLetter",
+                data: { type: arg },
+                success: function (response) {
+
+                },
+                error: function (jqXHR, textStatus, errorMessage) {
+                    console.log(errorMessage);
+                }
+            });
+        }
+        $(document).ready(function () {
+
+            //  $('#div1').hide();
+            $('#div2').hide();
+            $('#div3').hide();
+            $('#div4').hide();
+
+            jQuery('.showSingle').click(function () {
+                jQuery('.showSingle').removeAttr("style")
+                jQuery('.targetDiv').hide();
+                jQuery('#div' + jQuery(this).attr('target')).show();
+                jQuery('#div' + jQuery(this).css({ 'font-weight': 'bold', 'font-size': '14px' }));
+            });
+
+            if ('' != '' && '' != '') {
+                ShowMessage('', '');
+            }
+            else if ('' != '' && '' != '') {
+                ShowMessage('', '');
+            }
+
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#appbandnav, .nav-controller').on('click', function (event) {
+                $('nav').toggleClass('focus');
+            });
+            $('#appbandnav, .nav-controller').on('mouseover', function (event) {
+                $('#appbandnav').addClass('focus');
+            }).on('mouseout', function (event) {
+                $('#appbandnav').removeClass('focus');
+            })
+        })
+    </script>
+
+
+</body>
+</html>
